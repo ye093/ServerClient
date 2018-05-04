@@ -108,15 +108,15 @@ class BasicLayout extends React.PureComponent {
       type: 'user/fetchCurrent',
     });
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     unenquireScreen(this.enquireHandler);
   }
   getPageTitle() {
     const { routerData, location } = this.props;
     const { pathname } = location;
-    let title = 'Ant Design Pro';
+    let title = '微同城';
     if (routerData[pathname] && routerData[pathname].name) {
-      title = `${routerData[pathname].name} - Ant Design Pro`;
+      title = `${routerData[pathname].name} - 微同城`;
     }
     return title;
   }
@@ -254,7 +254,7 @@ class BasicLayout extends React.PureComponent {
               ]}
               copyright={
                 <Fragment>
-                  Copyright <Icon type="copyright" /> 2018 蚂蚁金服体验技术部出品
+                  Copyright <Icon type="copyright" /> 2018 鼎尖网络技术部出品
                 </Fragment>
               }
             />
